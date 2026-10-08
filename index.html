@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="stage" id="stage">
+
+        <!-- BACKGROUND -->
+        <div class="ambient ambient-1"></div>
+        <div class="ambient ambient-2"></div>
+
+
+        <!-- =====================================
+             LEFT COLUMN — UMBRELLA + ROPE
+        ====================================== -->
+        <section class="umbrella-side">
+
+            <div class="umbrella-wrapper">
+
+                <div class="umbrella">
+                    <div class="umbrella-shine"></div>
+                </div>
+
+                <div class="umbrella-handle"></div>
+
+                <div class="rope" id="rope">
+                    <div
+                        class="rope-ball"
+                        id="ropeBall"
+                        tabindex="0"
+                        aria-label="Pull the rope"
+                    ></div>
+                </div>
+
+            </div>
+
+            <!-- INSTRUCTION -->
+            <div class="instruction">
+                <span class="instruction-line"></span>
+                Pull the rope
+                <span class="instruction-line"></span>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RIGHT COLUMN — LOGIN INTERFACE
+        ====================================== -->
+        <section class="login-side">
+
+            <div class="login-wrapper">
+
+                <!-- TOP BAR -->
+                <nav class="top-bar">
+
+                    <div class="brand">
+                        <span class="brand-dot"></span>
+                        LOGIN
+                    </div>
+
+                    <div class="top-links">
+                        <span>HOME</span>
+                        <span>ABOUT</span>
+                        <span>HELP</span>
+                    </div>
+
+                </nav>
+
+
+                <!-- LOGIN FORM -->
+                <form class="login-card" id="loginForm">
+
+                    <h1 class="login-title">
+                        Welcome back.
+                    </h1>
+
+                    <p class="login-subtitle">
+                        Sign in to continue to your account.
+                    </p>
+
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            required
+                        />
+                    </div>
+
+
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="••••••••"
+                            required
+                        />
+                    </div>
+
+
+                    <button
+                        class="login-button"
+                        id="loginButton"
+                        type="submit"
+                    >
+                        SIGN IN
+                    </button>
+
+
+                    <div class="login-footer">
+                        <span>Forgot password?</span>
+                        <span>Create account</span>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BOTTOM NAVIGATION
+        ====================================== -->
+        <nav class="bottom-bar">
+
+            <div class="nav-item active">Home</div>
+            <div class="nav-item">Explore</div>
+            <div class="nav-item">Account</div>
+            <div class="nav-item">Settings</div>
+
+        </nav>
+
+
+        <!-- RESET -->
+        <button class="reset" id="reset" aria-label="Reset">
+            ↻
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
