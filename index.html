@@ -1,160 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umbrella Login</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal frontend development learning journey, with HTML and CSS lessons, examples, and projects.">
+  <title>Frontend Journey | My Learning Portfolio</title>
+  <link rel="stylesheet" href="css/site.css">
 </head>
-
 <body>
+  <header class="header">
+    <a class="logo" href="index.html">Frontend<span>Journey</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#lessons">Lessons</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
-    <main class="stage" id="stage">
+  <main>
+    <section class="hero">
+      <p class="eyebrow">MY DEVELOPER JOURNEY</p>
+      <h1>Learning the web, <span>one lesson at a time.</span></h1>
+      <p class="lead">
+        A personal learning portfolio documenting my journey through
+        HTML and CSS. Each lesson explains what I learned, why it matters,
+        and how to apply it in real websites.
+      </p>
+      <a class="button" href="#lessons">Explore my lessons ↓</a>
+      <div class="stats">
+        <div><strong>04</strong><span>Lessons documented</span></div>
+        <div><strong>04</strong><span>Practice projects</span></div>
+        <div><strong>01</strong><span>Learning journey</span></div>
+      </div>
+    </section>
 
-        <!-- BACKGROUND -->
-        <div class="ambient ambient-1"></div>
-        <div class="ambient ambient-2"></div>
+    <section class="section" id="lessons">
+      <div class="section-heading">
+        <p class="eyebrow">THE LEARNING LIBRARY</p>
+        <h2>What I've learned so far</h2>
+        <p>Start from Lesson 1 or revisit any topic whenever you need it.</p>
+      </div>
 
+      <div class="lesson-grid">
+        <article class="lesson-card">
+          <span class="lesson-number">LESSON 01</span>
+          <h3>HTML Link Targets</h3>
+          <p>Learn how the target attribute controls where a link opens.</p>
+          <div class="tag-list"><span>HTML</span><span>Links</span></div>
+          <a href="lessons/lesson-01.html">Read lesson →</a>
+        </article>
 
-        <!-- =====================================
-             LEFT COLUMN — UMBRELLA + ROPE
-        ====================================== -->
-        <section class="umbrella-side">
+        <article class="lesson-card">
+          <span class="lesson-number">LESSON 02</span>
+          <h3>Paths and URLs</h3>
+          <p>Understand absolute paths, absolute URLs, and relative paths.</p>
+          <div class="tag-list"><span>HTML</span><span>Paths</span></div>
+          <a href="lessons/lesson-02.html">Read lesson →</a>
+        </article>
 
-            <div class="umbrella-wrapper">
+        <article class="lesson-card">
+          <span class="lesson-number">LESSON 03</span>
+          <h3>Path Syntax</h3>
+          <p>Use slashes, ./, and ../ to connect files in a website.</p>
+          <div class="tag-list"><span>HTML</span><span>File structure</span></div>
+          <a href="lessons/lesson-03.html">Read lesson →</a>
+        </article>
 
-                <div class="umbrella">
-                    <div class="umbrella-shine"></div>
-                </div>
+        <article class="lesson-card">
+          <span class="lesson-number">LESSON 04</span>
+          <h3>CSS Link States</h3>
+          <p>Style links according to visited, hover, focus, and active states.</p>
+          <div class="tag-list"><span>CSS</span><span>Pseudo-classes</span></div>
+          <a href="lessons/lesson-04.html">Read lesson →</a>
+        </article>
+      </div>
+    </section>
 
-                <div class="umbrella-handle"></div>
+    <section class="about-panel" id="about">
+      <p class="eyebrow">ABOUT THIS WEBSITE</p>
+      <h2>Learning by building</h2>
+      <p>
+        I'm studying frontend development by learning concepts, testing
+        examples, and building practical projects. This website is my
+        growing record of the knowledge I gain along the way.
+      </p>
+      <p>
+        New lessons will be added as I progress through the freeCodeCamp
+        curriculum. The goal is to understand the concepts, not just copy code.
+      </p>
+    </section>
+  </main>
 
-                <div class="rope" id="rope">
-                    <div
-                        class="rope-ball"
-                        id="ropeBall"
-                        tabindex="0"
-                        aria-label="Pull the rope"
-                    ></div>
-                </div>
-
-            </div>
-
-            <!-- INSTRUCTION -->
-            <div class="instruction">
-                <span class="instruction-line"></span>
-                Pull the rope
-                <span class="instruction-line"></span>
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             RIGHT COLUMN — LOGIN INTERFACE
-        ====================================== -->
-        <section class="login-side">
-
-            <div class="login-wrapper">
-
-                <!-- TOP BAR -->
-                <nav class="top-bar">
-
-                    <div class="brand">
-                        <span class="brand-dot"></span>
-                        LOGIN
-                    </div>
-
-                    <div class="top-links">
-                        <span>HOME</span>
-                        <span>ABOUT</span>
-                        <span>HELP</span>
-                    </div>
-
-                </nav>
-
-
-                <!-- LOGIN FORM -->
-                <form class="login-card" id="loginForm">
-
-                    <h1 class="login-title">
-                        Welcome back.
-                    </h1>
-
-                    <p class="login-subtitle">
-                        Sign in to continue to your account.
-                    </p>
-
-
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input
-                            id="email"
-                            type="email"
-                            placeholder="you@example.com"
-                            required
-                        />
-                    </div>
-
-
-                    <div class="field">
-                        <label for="password">Password</label>
-                        <input
-                            id="password"
-                            type="password"
-                            placeholder="••••••••"
-                            required
-                        />
-                    </div>
-
-
-                    <button
-                        class="login-button"
-                        id="loginButton"
-                        type="submit"
-                    >
-                        SIGN IN
-                    </button>
-
-
-                    <div class="login-footer">
-                        <span>Forgot password?</span>
-                        <span>Create account</span>
-                    </div>
-
-                </form>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             BOTTOM NAVIGATION
-        ====================================== -->
-        <nav class="bottom-bar">
-
-            <div class="nav-item active">Home</div>
-            <div class="nav-item">Explore</div>
-            <div class="nav-item">Account</div>
-            <div class="nav-item">Settings</div>
-
-        </nav>
-
-
-        <!-- RESET -->
-        <button class="reset" id="reset" aria-label="Reset">
-            ↻
-        </button>
-
-    </main>
-
-    <script src="script.js"></script>
-
+  <footer>
+    <a class="logo" href="index.html">Frontend<span>Journey</span></a>
+    <p>Built while learning. Improved with every lesson.</p>
+  </footer>
 </body>
 </html>

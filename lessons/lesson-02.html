@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2: Paths and URLs | Frontend Journey</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">Frontend<span>Journey</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="../index.html#lessons">Lessons</a></nav>
+  </header>
+  <main class="article">
+    <a class="back-link" href="../index.html">← All lessons</a>
+    <p class="eyebrow">LESSON 02 · HTML</p>
+    <h1>Understanding paths and URLs</h1>
+    <p class="lead">I learned how to point links to web addresses and files in different locations.</p>
+
+    <section class="content-card">
+      <h2>What I learned</h2>
+      <h3>Absolute URL</h3>
+      <p>A complete web address that includes the scheme and domain.</p>
+      <pre><code>&lt;a href="https://www.freecodecamp.org/"&gt;
+  Visit freeCodeCamp
+&lt;/a&gt;</code></pre>
+
+      <h3>Relative path</h3>
+      <p>A location described in relation to the current document's URL. It is useful for linking to pages and assets within the same website.</p>
+      <pre><code>&lt;a href="pages/about.html"&gt;About&lt;/a&gt;</code></pre>
+
+      <h3>Absolute filesystem path</h3>
+      <p>A path such as <code>/Users/mac/Desktop/example.html</code> identifies a file on a particular computer. It is not normally a suitable website link because it won't work for other visitors.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Why it matters</h2>
+      <p>Incorrect paths create broken links and missing images or stylesheets. Relative paths help keep a website portable when its files are deployed to a server.</p>
+      <p>For normal HTML documents, relative URLs resolve from the document's URL, unless the page defines a different base URL.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>What I practiced</h2>
+      <p>I created pages in different folders and connected them with links.</p>
+      <a class="button" href="../path-explorer/index.html">Open my path explorer project →</a>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="lesson-01.html">← Previous: Link targets</a>
+      <a href="lesson-03.html">Next: Path syntax →</a>
+    </nav>
+  </main>
+  <footer><a class="logo" href="../index.html">Frontend<span>Journey</span></a><p>Lesson 2 of my learning journey</p></footer>
+</body>
+</html>

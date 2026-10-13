@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 1: Link Targets | Frontend Journey</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">Frontend<span>Journey</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#lessons">Lessons</a>
+    </nav>
+  </header>
+  <main class="article">
+    <a class="back-link" href="../index.html">← All lessons</a>
+    <p class="eyebrow">LESSON 01 · HTML</p>
+    <h1>Understanding HTML link targets</h1>
+    <p class="lead">I learned how the target attribute controls where a linked page opens.</p>
+
+    <section class="content-card">
+      <h2>What I learned</h2>
+      <p>An HTML link uses the <code>&lt;a&gt;</code> element. Its <code>href</code> attribute specifies the destination, while <code>target</code> tells the browser where to open that destination.</p>
+      <pre><code>&lt;a href="https://example.com" target="_blank"&gt;
+  Visit Example
+&lt;/a&gt;</code></pre>
+      <ul>
+        <li><code>_self</code>: open in the current browsing context. This is the default.</li>
+        <li><code>_blank</code>: open in a new tab or window, depending on the browser.</li>
+        <li><code>_parent</code>: open in the parent browsing context, when one exists.</li>
+        <li><code>_top</code>: open in the top-level browsing context.</li>
+        <li><code>_unfencedTop</code>: a specialized target for navigating out of a fenced frame, where supported.</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h2>Why it matters</h2>
+      <p>Choosing a target affects how people move between pages. Opening external resources in a new tab can help people keep their place, but it should be used thoughtfully.</p>
+      <p>For links using <code>target="_blank"</code>, adding <code>rel="noopener"</code> is a useful explicit security practice.</p>
+      <pre><code>&lt;a href="https://example.com"
+   target="_blank"
+   rel="noopener"&gt;
+  Open external site
+&lt;/a&gt;</code></pre>
+    </section>
+
+    <section class="content-card">
+      <h2>What I practiced</h2>
+      <p>I built a small link behavior lab to compare how different target values work.</p>
+      <a class="button" href="../link-behavior-lab/index.html">Open my practice project →</a>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <span>Beginning of the learning journey</span>
+      <a href="lesson-02.html">Next: Paths and URLs →</a>
+    </nav>
+  </main>
+  <footer><a class="logo" href="../index.html">Frontend<span>Journey</span></a><p>Lesson 1 of my learning journey</p></footer>
+</body>
+</html>

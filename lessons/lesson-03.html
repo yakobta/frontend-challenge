@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3: Path Syntax | Frontend Journey</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">Frontend<span>Journey</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="../index.html#lessons">Lessons</a></nav>
+  </header>
+  <main class="article">
+    <a class="back-link" href="../index.html">← All lessons</a>
+    <p class="eyebrow">LESSON 03 · HTML</p>
+    <h1>Learning path syntax</h1>
+    <p class="lead">I learned to use /, ./, and ../ to describe where files are located.</p>
+
+    <section class="content-card">
+      <h2>What I learned</h2>
+      <h3>The forward slash: /</h3>
+      <p>Separates directory names in web paths.</p>
+      <pre><code>pages/about.html
+css/style.css</code></pre>
+
+      <h3>Single dot: ./</h3>
+      <p>Refers to the current directory. It is often optional in a relative URL.</p>
+      <pre><code>./about.html
+about.html</code></pre>
+
+      <h3>Double dot: ../</h3>
+      <p>Moves up one directory level.</p>
+      <pre><code>../css/style.css</code></pre>
+      <p>If a page is located inside a <code>pages</code> folder, <code>../css/style.css</code> goes up to the parent folder and then enters <code>css</code>.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Example folder structure</h2>
+      <pre><code>my-app/
+├── index.html
+├── css/
+│   └── style.css
+└── pages/
+    └── about.html</code></pre>
+      <p>From <code>pages/about.html</code>, the stylesheet path is <code>../css/style.css</code>, while the homepage path is <code>../index.html</code>.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>What I practiced</h2>
+      <p>I built a path syntax lab with a homepage, a nested page, and a shared stylesheet.</p>
+      <a class="button" href="../path-syntax-lab/index.html">Open my path syntax lab →</a>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="lesson-02.html">← Previous: Paths and URLs</a>
+      <a href="lesson-04.html">Next: CSS link states →</a>
+    </nav>
+  </main>
+  <footer><a class="logo" href="../index.html">Frontend<span>Journey</span></a><p>Lesson 3 of my learning journey</p></footer>
+</body>
+</html>

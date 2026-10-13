@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4: CSS Link States | Frontend Journey</title>
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">Frontend<span>Journey</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="../index.html#lessons">Lessons</a></nav>
+  </header>
+  <main class="article">
+    <a class="back-link" href="../index.html">← All lessons</a>
+    <p class="eyebrow">LESSON 04 · CSS</p>
+    <h1>Understanding CSS link states</h1>
+    <p class="lead">I learned that CSS can change a link's appearance according to the user's interaction.</p>
+
+    <section class="content-card">
+      <h2>What I learned</h2>
+      <p>These states are selected with CSS pseudo-classes. A pseudo-class starts with a colon.</p>
+      <ul>
+        <li><code>:link</code>: an unvisited link.</li>
+        <li><code>:visited</code>: a link to a destination the browser records as visited.</li>
+        <li><code>:hover</code>: the pointer is over the link.</li>
+        <li><code>:focus</code>: the link has focus.</li>
+        <li><code>:active</code>: the link is being activated, such as while a mouse button is held down.</li>
+      </ul>
+      <pre><code>a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: red; }
+a:focus-visible {
+  outline: 3px solid green;
+}
+a:active { color: black; }</code></pre>
+    </section>
+
+    <section class="content-card">
+      <h2>Why it matters</h2>
+      <p>Link states communicate interaction, help people recognize visited destinations, and support keyboard navigation. Focus indicators should be visible and must not be removed without an accessible replacement.</p>
+      <p>The common order is <strong>LVHFA</strong>: link, visited, hover, focus, active. This helps avoid later rules overriding earlier ones when selectors have equal specificity.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>What I practiced</h2>
+      <p>I built a link state lab to test hover, focus, visited, and active behavior.</p>
+      <a class="button" href="../link-state-lab/index.html">Open my link state lab →</a>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="lesson-03.html">← Previous: Path syntax</a>
+      <a href="../index.html#lessons">Back to all lessons →</a>
+    </nav>
+  </main>
+  <footer><a class="logo" href="../index.html">Frontend<span>Journey</span></a><p>Lesson 4 of my learning journey</p></footer>
+</body>
+</html>
