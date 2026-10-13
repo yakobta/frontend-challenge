@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content+"an interactive beginner-friendly guide to HTML anchor target values“》
+<title>link behavior lab | HTML learning</title>
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="#home">Link<span>lab</span></a>
+
+<nav aria-label="Main navigation">
+ <a class="logo" href="#home">Link<span>Lab</span></a>
+<nav aria-label="Main navigation">
+      <a href="#examples">Examples</a>
+      <a href="#reference">Reference</a>
+    </nav>
+  </header>
+
+<main id="home">
+    <section class="hero">
+      <p class="eyebrow">HTML FUNDAMENTALS / 01</p>
+      <h1>Where should your links <span>open?</span></h1>
+      <p class="intro">
+        Learn how the HTML target attribute controls the browsing
+        context used when someone follows a link.
+      </p>
+      <a class="primary-link" href="#examples">Explore the examples</a>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="section-heading">
+        <p class="eyebrow">TRY IT YOURSELF</p>
+        <h2>Four important values</h2>
+        <p>Click a link to observe how your browser handles it.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="number">01</span>
+          <h3>Current context</h3>
+          <code>target="_self"</code>
+          <p>Opens the destination in the current tab or context.</p>
+          <a href="https://example.com" target="_self">Open example.com</a>
+        </article>
+
+        <article class="card featured">
+          <span class="number">02</span>
+          <h3>New context</h3>
+          <code>target="_blank"</code>
+          <p>Usually opens the destination in a new browser tab.</p>
+          <a href="https://freecodecamp.org"
+             target="_blank"
+             rel="noopener noreferrer">Visit freeCodeCamp ↗</a>
+        </article>
+
+        <article class="card">
+          <span class="number">03</span>
+          <h3>Parent context</h3>
+          <code>target="_parent"</code>
+          <p>Opens in the parent context. Outside frames, it behaves like the current context.</p>
+          <a href="https://example.com" target="_parent">Open example.com</a>
+        </article>
+
+        <article class="card">
+          <span class="number">04</span>
+          <h3>Top-level context</h3>
+          <code>target="_top"</code>
+          <p>Targets the full browser tab, escaping embedded frames when applicable.</p>
+          <a href="https://example.com" target="_top">Open example.com</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="reference" id="reference">
+      <p class="eyebrow">QUICK REFERENCE</p>
+      <h2>Choose the right target</h2>
+      <div class="reference-row">
+        <code>_self</code>
+        <p>Normal navigation within the current context.</p>
+      </div>
+      <div class="reference-row">
+        <code>_blank</code>
+        <p>Open a link in a new context, commonly a new tab.</p>
+      </div>
+      <div class="reference-row">
+        <code>_parent</code>
+        <p>Use the parent context, especially when working with iframes.</p>
+      </div>
+      <div class="reference-row">
+        <code>_top</code>
+        <p>Use the top-level browser context.</p>
+      </div>
+      <div class="reference-row">
+        <code>_unfencedTop</code>
+        <p>An experimental value for specific fenced-frame use cases.</p>
+      </div>
+    </section>
+
+    <aside class="tip">
+      <strong>Developer tip</strong>
+      <p>
+        Use descriptive link text so visitors know what they are opening.
+        When opening external links in a new tab, consider the user's
+        expectations and add appropriate rel attributes.
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Built while learning Responsive Web Design.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
