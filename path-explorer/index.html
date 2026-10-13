@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn absolute URLs and relative file paths with practical examples.">
+  <title>Path Explorer | Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">Path Explorer<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">HTML FUNDAMENTALS</p>
+      <h1>Every link needs a <span>path.</span></h1>
+      <p>Learn how to connect pages and external resources using the right URL or file path.</p>
+      <a class="button" href="pages/about.html">Explore the guide</a>
+    </section>
+
+    <section class="content">
+      <h2>Three ways to locate resources</h2>
+
+      <article class="lesson-card">
+        <span class="tag">01 / LOCAL FILES</span>
+        <h3>Absolute filesystem path</h3>
+        <p>Specifies the full location of a file on a particular computer.</p>
+        <pre><code>/Users/mac/Documents/about.html</code></pre>
+        <p class="note">Useful when identifying a local file, but generally unsuitable for portable website links.</p>
+      </article>
+
+      <article class="lesson-card">
+        <span class="tag">02 / EXTERNAL RESOURCE</span>
+        <h3>Absolute URL</h3>
+        <p>Provides the complete web address of an external resource.</p>
+        <pre><code>https://www.freecodecamp.org/</code></pre>
+        <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+          Visit freeCodeCamp ↗
+        </a>
+      </article>
+
+      <article class="lesson-card">
+        <span class="tag">03 / INTERNAL RESOURCE</span>
+        <h3>Relative path</h3>
+        <p>Locates a file relative to the current document.</p>
+        <pre><code>pages/about.html</code></pre>
+        <a href="pages/about.html">Open the About page →</a>
+      </article>
+    </section>
+
+    <section class="path-example">
+      <p class="eyebrow">DIRECTORY EXAMPLE</p>
+      <h2>Understand the relationship</h2>
+      <pre><code>path-explorer/
+├── index.html
+├── style.css
+└── pages/
+    ├── about.html
+    └── contact.html</code></pre>
+      <p>From <code>index.html</code>, use <code>pages/about.html</code> to open the About page.</p>
+      <p>From <code>pages/about.html</code>, use <code>../index.html</code> to return home.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built while learning Responsive Web Design.</p>
+    <a href="pages/contact.html">Contact</a>
+  </footer>
+</body>
+</html>
