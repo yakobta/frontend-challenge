@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Syntax Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">Path Syntax Lab</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pages/paths.html">Path Guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">RESPONSIVE WEB DESIGN · LESSON 3</p>
+      <h1>Learn to navigate <span>file paths.</span></h1>
+      <p>
+        Understand how slashes, single dots, and double dots help
+        browsers locate resources in your website.
+      </p>
+      <a class="button" href="pages/paths.html">Explore the path guide</a>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <span class="number">01</span>
+        <h2>Slash /</h2>
+        <code>pages/paths.html</code>
+        <p>Separates directory names and filenames in a path.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">02</span>
+        <h2>Single dot ./</h2>
+        <code>./index.html</code>
+        <p>Refers to a file in the current directory.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">03</span>
+        <h2>Double dot ../</h2>
+        <code>../index.html</code>
+        <p>Moves up one directory level before locating a file.</p>
+      </article>
+    </section>
+
+    <section class="example">
+      <p class="eyebrow">YOUR FILE STRUCTURE</p>
+      <h2>See how the files connect</h2>
+      <pre><code>path-syntax-lab/
+├── index.html
+├── css/
+│   └── style.css
+└── pages/
+    └── paths.html</code></pre>
+      <p>
+        From this homepage, <code>css/style.css</code> locates the
+        stylesheet, while <code>pages/paths.html</code> opens the guide.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by practicing HTML and CSS.</p>
+    <a href="pages/paths.html">Continue learning →</a>
+  </footer>
+</body>
+</html>

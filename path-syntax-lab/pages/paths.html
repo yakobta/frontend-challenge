@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Guide | Path Syntax Lab</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="../index.html">Path Syntax Lab</a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="paths.html">Path Guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PATH REFERENCE</p>
+      <h1>Three rules to <span>remember.</span></h1>
+      <p>Each relative path starts from the directory of the document using it.</p>
+      <a class="button" href="../index.html">← Back to home</a>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Slash /</h2>
+        <code>css/style.css</code>
+        <p>Enter the css directory and locate style.css.</p>
+      </article>
+
+      <article class="card">
+        <h2>Single dot ./</h2>
+        <code>./paths.html</code>
+        <p>From this page, this refers to the same paths directory.</p>
+      </article>
+
+      <article class="card">
+        <h2>Double dot ../</h2>
+        <code>../index.html</code>
+        <p>Move up from pages to the project root and open index.html.</p>
+      </article>
+    </section>
+
+    <section class="example">
+      <h2>Challenge: find the stylesheet</h2>
+      <p>
+        You are currently in <code>pages/paths.html</code>.
+        The stylesheet is in <code>css/style.css</code> at the project root.
+      </p>
+      <p>Your correct path is:</p>
+      <pre><code>../css/style.css</code></pre>
+      <p>
+        First move up one directory. Then enter css and locate style.css.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Path Syntax Lab · Lesson 3</p>
+    <a href="../index.html">Home</a>
+  </footer>
+</body>
+</html>
