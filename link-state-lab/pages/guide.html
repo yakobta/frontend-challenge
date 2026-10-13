@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Link States | LinkLab</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Link<span>Lab</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="guide.html">Guide</a>
+    </nav>
+  </header>
+
+  <main class="guide-main">
+    <p class="eyebrow">THE REFERENCE GUIDE</p>
+    <h1>Understanding link states</h1>
+    <p class="intro">
+      CSS pseudo-classes let you style links according to their current
+      interaction state.
+    </p>
+
+    <article class="guide-card">
+      <h2>1. Unvisited link</h2>
+      <p>The <code>:link</code> pseudo-class selects an unvisited link.</p>
+      <pre><code>a:link {
+  color: #2563eb;
+}</code></pre>
+    </article>
+
+    <article class="guide-card">
+      <h2>2. Visited link</h2>
+      <p>The <code>:visited</code> pseudo-class indicates a previously visited destination.</p>
+      <pre><code>a:visited {
+  color: #8b5cf6;
+}</code></pre>
+    </article>
+
+    <article class="guide-card">
+      <h2>3. Hover</h2>
+      <p>The <code>:hover</code> pseudo-class applies when a pointer is over a link.</p>
+      <pre><code>a:hover {
+  color: #dc2626;
+}</code></pre>
+    </article>
+
+    <article class="guide-card">
+      <h2>4. Focus</h2>
+      <p>The <code>:focus-visible</code> pseudo-class helps show keyboard focus.</p>
+      <pre><code>a:focus-visible {
+  outline: 3px solid #16a34a;
+  outline-offset: 4px;
+}</code></pre>
+    </article>
+
+    <article class="guide-card">
+      <h2>5. Active</h2>
+      <p>The <code>:active</code> pseudo-class applies while a link is being activated.</p>
+      <pre><code>a:active {
+  color: #111827;
+}</code></pre>
+    </article>
+
+    <p class="back-link"><a href="../index.html">← Back to the interactive lab</a></p>
+  </main>
+
+  <footer>
+    <p>Link State Lab · Practice, test, and keep learning</p>
+  </footer>
+</body>
+</html>

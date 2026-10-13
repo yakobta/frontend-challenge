@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive playground for learning CSS link states.">
+  <title>Link State Lab | Learn CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Link<span>Lab</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pages/guide.html">Guide</a>
+      <a href="#practice">Practice</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">CSS INTERACTIVE LESSON</p>
+      <h1>Every link has a <span>state.</span></h1>
+      <p class="intro">
+        Learn how links respond to visits, mouse movement, keyboard
+        focus, and clicks. Explore the examples below.
+      </p>
+      <a class="primary-link" href="pages/guide.html">
+        Explore the guide <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="lesson-section" id="practice">
+      <div class="section-heading">
+        <p class="eyebrow">THE FIVE STATES</p>
+        <h2>Try each interaction</h2>
+        <p>Move your mouse, use the Tab key, and click the links.</p>
+      </div>
+
+      <div class="state-grid">
+        <article class="state-card">
+          <p class="state-number">01 / LINK</p>
+          <h3>Unvisited</h3>
+          <p>A link you have not visited before.</p>
+          <a class="demo-link" href="pages/guide.html">Open the guide</a>
+        </article>
+
+        <article class="state-card">
+          <p class="state-number">02 / VISITED</p>
+          <h3>Previously visited</h3>
+          <p>Visit the guide, then return here to test this state.</p>
+          <a class="demo-link" href="pages/guide.html">Visit again</a>
+        </article>
+
+        <article class="state-card">
+          <p class="state-number">03 / HOVER</p>
+          <h3>Pointer interaction</h3>
+          <p>Place your mouse over this link.</p>
+          <a class="demo-link" href="pages/guide.html">Hover over me</a>
+        </article>
+
+        <article class="state-card">
+          <p class="state-number">04 / FOCUS</p>
+          <h3>Keyboard navigation</h3>
+          <p>Press Tab until this link receives focus.</p>
+          <a class="demo-link" href="pages/guide.html">Focus on me</a>
+        </article>
+
+        <article class="state-card">
+          <p class="state-number">05 / ACTIVE</p>
+          <h3>Being activated</h3>
+          <p>Press and hold the mouse button on this link.</p>
+          <a class="demo-link" href="pages/guide.html">Press and hold</a>
+        </article>
+
+        <article class="state-card code-card">
+          <p class="state-number">CSS MEMORY TIP</p>
+          <h3>Remember LVHFA</h3>
+          <p>Write your link states in the recommended order.</p>
+          <code>:link :visited :hover :focus :active</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="tip-panel">
+      <h2>Built for everyone</h2>
+      <p>
+        A good link should be recognizable, provide interaction feedback,
+        and remain easy to navigate with a keyboard.
+      </p>
+      <a href="pages/guide.html">Read the full guide →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Link State Lab · Built while learning HTML and CSS</p>
+  </footer>
+</body>
+</html>
